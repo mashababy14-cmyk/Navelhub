@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importing a nice font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Student Profile</h1>
+        <p>Please fill in your details below</p>
+      </header>
+
+      <form action="post">
+        <!-- Full Name -->
+        <div class="input-group">
+          <label for="Name">Full Name</label>
+          <input type="text" id="Name" name="name" placeholder="John Doe" />
+        </div>
+
+        <!-- Section (Radio Buttons) -->
+        <div class="input-group">
+          <label class="section-label">Select your section</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" id="A" name="Section" value="A" />
+              <span>A</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" id="B" name="Section" value="B" />
+              <span>B</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" id="C" name="Section" value="C" />
+              <span>C</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" id="D" name="Section" value="D" />
+              <span>D</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Roll Number -->
+        <div class="input-group">
+          <label for="Roll">Roll Number</label>
+          <div class="custom-select">
+            <select name="Roll" id="Roll">
+              <option value="" disabled selected>Select Roll</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Parents Info -->
+        <div class="row">
+          <div class="input-group">
+            <label for="fathers name">Father's Name</label>
+            <input
+              type="text"
+              id="fathers name"
+              name="fathers name"
+              placeholder="Father's Name"
+            />
+          </div>
+          <div class="input-group">
+            <label for="mothers name">Mother's Name</label>
+            <input
+              type="text"
+              id="mothers name"
+              name="mothers name"
+              placeholder="Mother's Name"
+            />
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="row">
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </div>
+          <div class="input-group">
+            <label for="number">Mobile Number</label>
+            <input
+              type="number"
+              id="number"
+              name="number"
+              placeholder="01*********"
+            />
+          </div>
+        </div>
+
+        <!-- Date -->
+        <div class="input-group">
+          <label for="birthday">Date of Birth</label>
+          <input type="date" name="Date of birth" id="birthday" />
+        </div>
+
+        <!-- Textarea -->
+        <div class="input-group">
+          <label for="SP">Special Information</label>
+          <textarea
+            rows="4"
+            name="Special Information"
+            id="SP"
+            placeholder="Tell us something special about the student..."
+          ></textarea>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+          <label for="PS">Set Password</label>
+          <input
+            type="password"
+            name="passcode"
+            id="PS"
+            placeholder="Create a password"
+          />
+        </div>
+
+        <!-- Terms -->
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            id="TM"
+            name="terms and condition"
+            value="Yes"
+          />
+          <label for="TM"
+            >I agree to the <a href="#">terms and conditions</a></label
+          >
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-footer">
+          <button type="submit">Submit Profile</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
